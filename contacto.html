@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - CAROLINA Guitarras</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <a href="index.html">
+                <img src="img/logo.svg" alt="LOGO_GUITARRASCAROLINA">
+            </a>
+        </div>
+        <h1>CAROLINA</h1>
+        <p>Guitarras, accesorios y mantenimiento</p>
+        <nav>
+            <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="cat_guitarras.html">Guitarras</a></li>
+            <li><a href="cat_accs.html">Accesorios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        </nav>
+        
+
+    </header>
+
+
+    <main>
+
+        <nav>
+            <h2>En esta página</h2>
+            <ul>
+                <li><a href="#datos">Datos de contacto</a></li>
+                <li><a href="#consulta">Consulta</a></li>
+                <li><a href="#privacidad">Privacidad</a></li>
+            </ul>
+        </nav>
+
+
+        <section id="datos">
+
+            <h2>Contacta con nosotros</h2>
+
+            <p>
+                Si tienes alguna duda sobre nuestras guitarras o accesorios,
+                puedes ponerte en contacto con nosotros mediante el siguiente
+                formulario.
+            </p>
+
+            <form action="server.php" method="post">
+
+                <fieldset>
+
+                    <legend>Datos de contacto</legend>
+
+                    <p>
+                        <label for="nombre">Nombre y Apellidos:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+
+                    <p>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="text" id="telefono" name="telefono">
+                    </p>
+
+                </fieldset>
+
+
+                <section id="consulta">
+
+                    <h3>Consulta</h3>
+
+                    <fieldset>
+
+                        <legend>Datos de la consulta</legend>
+
+                        <p>
+                            <label for="tipo">¿Sobre qué producto quieres consultar?</label>
+
+                            <select id="tipo" name="tipo" required>
+
+                                <option value="">Selecciona una opción</option>
+
+                                <optgroup label="Guitarras">
+                                    <option value="electrica">Guitarra eléctrica</option>
+                                    <option value="acustica">Guitarra acústica</option>
+                                    <option value="clasica">Guitarra clásica</option>
+                                </optgroup>
+
+                                <optgroup label="Accesorios">
+                                    <option value="afinador">Afinador</option>
+                                    <option value="altavoz">Altavoz</option>
+                                    <option value="capo">Capo</option>
+                                </optgroup>
+
+                            </select>
+                        </p>
+
+
+                        <p>
+                            <label for="mensaje">Mensaje:</label>
+                        </p>
+
+                        <p>
+                            <textarea id="mensaje" name="mensaje"
+                                rows="8" cols="50"
+                                placeholder="Escribe aquí tu consulta..."
+                                required></textarea>
+                        </p>
+
+                    </fieldset>
+
+                </section>
+
+
+                <section id="privacidad">
+
+                    <h3>Privacidad</h3>
+
+                    <p>
+                        <label for="privacidad_check">
+                            <input type="checkbox"
+                                id="privacidad_check"
+                                name="privacidad"
+                                value="acepto"
+                                required>
+                            Acepto la política de privacidad.
+                        </label>
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Enviar formulario">
+                    </p>
+
+                </section>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>CAROLINA &copy; 2026</p>
+        <p>Guitarras y accesorios para músicos de todos los niveles.</p>
+    </footer>
+
+</body>
+
+</html>
