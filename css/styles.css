@@ -593,6 +593,64 @@ main section p {
     height: 400px;
     object-fit: contain;
 }
+form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+fieldset {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #8b6f47;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #8b6f47;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: 1px solid #8b6f47;
+    background-color: #8b6f47;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #6f5637;
+}
 
 @media screen and (max-width: 600px) {
 
@@ -786,5 +844,27 @@ main section p {
         display: block;
         margin: 10px 0;
     }
+
+    form {
+        width: 100%;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        height: 180px;
+    }
+
 
 }
