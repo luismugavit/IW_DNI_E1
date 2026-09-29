@@ -594,19 +594,197 @@ main section p {
     object-fit: contain;
 }
 
-/*MOVILES*/
 @media screen and (max-width: 600px) {
 
+    /* =========================
+       HEADER
+       ========================= */
+
+    header {
+        padding: 15px;
+    }
+
     header img {
-        width: 120px;
+        max-width: 100px;
+        height: auto;
     }
 
     header h1 {
-        font-size: 1.5em;
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+
+    /* =========================
+       MENÚ DE NAVEGACIÓN
+       ========================= */
+
+    header nav ul {
+        padding: 0;
     }
 
     header nav li {
         display: block;
-        margin: 10px;
+        margin: 10px 0;
     }
+
+
+    /* =========================
+       CONTENIDO PRINCIPAL
+       ========================= */
+
+    main {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+
+    /* =========================
+       ÍNDICES
+       ========================= */
+
+    main > nav ul {
+        padding-left: 20px;
+    }
+
+
+    /* =========================
+       IMÁGENES GENERALES
+       ========================= */
+
+    main img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    /* =========================
+       CATÁLOGO DE GUITARRAS
+       ========================= */
+
+    #electricas > ul,
+    #acusticas > ul,
+    #clasicas > ul {
+        padding: 0;
+    }
+
+    #electricas > ul > li,
+    #acusticas > ul > li,
+    #clasicas > ul > li {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #electricas article,
+    #acusticas article,
+    #clasicas article {
+        width: 100%;
+    }
+
+    #electricas article img,
+    #acusticas article img,
+    #clasicas article img {
+        max-width: 90%;
+        height: auto;
+    }
+
+
+    /* =========================
+       FOTOS DE PRODUCTOS
+       ========================= */
+
+    .fotos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .fotos img {
+        width: 250px;
+        height: 250px;
+        max-width: 90%;
+        object-fit: contain;
+    }
+
+
+    /* =========================
+       ACCESORIOS
+       ========================= */
+
+    #accesorios {
+        width: 100%;
+    }
+
+    #accesorios > article,
+    #accesorios article {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #accesorios figure {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    #accesorios img {
+        display: block;
+        width: 250px;
+        max-width: 90%;
+        height: auto;
+        margin: 0 auto;
+        object-fit: contain;
+    }
+
+
+    /* =========================
+       TABLAS
+       ========================= */
+
+    table {
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    th,
+    td {
+        padding: 6px;
+    }
+
+
+    /* =========================
+       AUDIO
+       ========================= */
+
+    audio {
+        width: 100%;
+        max-width: 400px;
+    }
+
+
+    /* =========================
+       FOOTER
+       ========================= */
+
+    footer {
+        padding: 20px 10px;
+    }
+
+    footer nav ul {
+        padding: 0;
+    }
+
+    footer nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
 }
