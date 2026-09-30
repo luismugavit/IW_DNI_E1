@@ -6,9 +6,9 @@
     --color-4: #F3EBDD;
     --color-5: #FAF7F0;
   }
-  body {
-    background-color: var(--color-5);
-  }
+body {
+background-color: var(--color-5);
+}
 
 /*HEADER*/
 header {
@@ -27,14 +27,14 @@ header img {
   margin-left: 30px;
 }
 header h1 {
-  color: #171513;
+  color: var(--color-0);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 50px;
   line-height: 1.2;
   margin: 10px;
 }
 header nav {
-    background-color: #3A2920;
+    background-color: var(--color-1);
     padding: 10px;
     margin-top: 15px;
 }
@@ -50,62 +50,69 @@ header nav li {
 }
 
 header nav a {
-    color: #FAF7F0;
+    color: var(--color-5);
     font-family: Georgia, 'Times New Roman', Times, serif, Helvetica, sans-serif;
     text-decoration: none;
     font-size: 1.3em;
 }
 
 header nav a:hover {
-    color: #A8784F;
+    color: var(--color-3);
 }
 
-/*FOOTER*/
+/* FOOTER */
 footer {
-    background-color: #3A2920;
-    color: #FAF7F0;
+    background-color: var(--color-1);
+    color: var(--color-5);
     text-align: center;
-    padding: 20px;
-    
+    padding: 30px 20px;
+    margin-top: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer h2 {
+    color: var(--color-4);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 15px;
 }
 
 footer p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.2em;
-    line-height: 1.5;
-    margin: 8px;
+    margin: 8px 0;
+    font-size: 1em;
 }
 
-footer nav {
-    background-color: #3A2920;
-    padding: 10px;
-    margin-top: 15px;
-}
-
-footer nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-footer nav li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-footer nav a {
-    color: #FAF7F0;
-    font-family: Georgia, 'Times New Roman', Times, serif, Helvetica, sans-serif;
+footer a {
+    color: var(--color-4);
     text-decoration: none;
     font-size: 1.3em;
 }
 
-footer nav a:hover {
-    color: #A8784F;
+footer a:hover {
+    color: var(--color-3);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+footer li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+footer .copyright {
+    border-top: 1px solid var(--color-2);
+    margin-top: 20px;
+    padding-top: 15px;
+    color: var(--color-3);
+    font-size: 0.9em;
 }
 
 /*MAIN*/
 main {
-    background-color: #FAF7F0;
+    background-color:var(--color-5);
     color: #171513;
     padding: 20px;
     margin: 0 auto;
